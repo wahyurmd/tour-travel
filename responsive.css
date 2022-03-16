@@ -44,6 +44,18 @@
         width: 150px;
         height: 250px;
     }
+
+    .popular-tour-wrapper {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    /* Main responsive */
+    form {
+        padding-top: 20px;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /* Tablet */
