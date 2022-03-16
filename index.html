@@ -14,24 +14,30 @@
   </head>
   <body>
     <header>
+      <div id="brand"><a href="index.html">travel & tour</a></div>
       <nav>
-        <div class="logo">
-          <a href="index.html"><h4>Tour & Travel</h4></a>
-        </div>
-        <ul class="">
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#wisata">Paket Wisata</a></li>
-          <li><a href="#contact">Kontak Kami</a></li>
+        <ul>
+          <li><a href="#home">beranda</a></li>
+          <li><a href="#about">tentang kami</a></li>
+          <li><a href="#wisata">paket wisata</a></li>
+          <li><a href="#contact">kontak kami</a></li>
         </ul>
-
-        <div class="menu-toggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
+      <div
+        class="header-icon"
+        id="hamburger-icon"
+        onclick="toggleMobileMenu(this)"
+      >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#home">beranda</a></li>
+          <li><a href="#about">tentang kami</a></li>
+          <li><a href="#wisata">paket wisata</a></li>
+          <li><a href="#contact">kontak kami</a></li>
+        </ul>
+      </div>
     </header>
     <!-- End: Header -->
 
@@ -54,11 +60,11 @@
     <div class="popular-tour-wrapper">
       <div class="container">
         <div class="heading">
-          <h2>Paket Wisata Populer</h2>
+          <h2 id="wisata">Paket Wisata Populer</h2>
           <p>Paket wisata populer dalam waktu dekat.</p>
         </div>
 
-        <div class="places animasi">
+        <div class="places">
           <div class="place">
             <div class="place-icon">
               <img src="https://cutt.ly/vA2CJ0o" />
@@ -113,19 +119,15 @@
 
     <!-- Bagian Footer -->
     <footer>
-      <div class="container animasi">
+      <div class="container">
         Copyright &copy; 2022 Travel & Tour. All rights Reserved
       </div>
     </footer>
     <!-- End: Footer -->
-
     <script>
-      const menuToggle = document.querySelector(".menu-toggle input");
-      const nav = document.querySelector("nav ul");
-
-      menuToggle.addEventListener("click", function () {
-        nav.classList.toggle("slide");
-      });
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
     </script>
   </body>
 </html>
