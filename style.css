@@ -3,15 +3,25 @@ body {
     margin: 0;
 }
 
+<<<<<<< HEAD
 /* Bagian popular place */
 .container-body {
+=======
+.container {
+>>>>>>> 7f733cfc2106198f522b47d0285a15359fff82c8
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .popular-tour-wrapper {
     padding-top: 50px;
+=======
+/* Bagian popular place */
+.popular-tour-wrapper {
+    padding-top: 100px;
+>>>>>>> 7f733cfc2106198f522b47d0285a15359fff82c8
     padding-bottom: 100px;
     height: 500px;
     background-color: #EEEEEE;
