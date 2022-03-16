@@ -4,19 +4,11 @@
 }
 
 body {
-    width: 100%;
     font-family: 'Open Sans', sans-serif;
     background-color: #dddd;
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-/* Header menu */
 nav {
     display: flex;
     background-color: rgba(95, 158, 160, 0.493);
@@ -28,7 +20,7 @@ nav {
 
 nav .logo {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     margin-left: -100px;
 }
 
@@ -107,81 +99,10 @@ nav ul li a:hover {
 
 /* Bagian popular place */
 .popular-tour-wrapper {
-    padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-}
-
-.popular-tour-wrapper .container {
-    text-align: center;
-}
-
-.place {
-    float: left;
-    width: 25%;
-    justify-content: space-between;
-}
-
-.heading {
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.place-icon {
-    position: relative;
-    color: #fff;
-}
-
-.place-icon p {
-    position: absolute;
-    top: 5%;
-    width: 100%;
-}
-
-.place-icon h3 {
-    position: absolute;
-    top: 15%;
-    width: 100%;
-}
-
-.place-icon img {
-    width: 250px;
-    height: 350px;
-}
-
-.btn-wrapper {
-    position: absolute;
-    top: 80%;
-    width: 100%;
-}
-
-.btn-wrapper a {
-    background-color: #11468F;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: small;
-}
-
-.btn-wrapper a:hover {
-    background-color: #0b2b57;
-    animation: all 10s;
-    opacity: 1;
-}
-
-/* .popular-tour-wrapper {
     padding-top: 20px;
     padding-bottom: 100px;
     height: 500px;
     background-color: #EEEEEE;
-    z-index: -10;
 }
 
 .popular-tour-wrapper {
@@ -218,9 +139,9 @@ nav ul li a:hover {
   }
 
 .place-icon h3 {
-    position: absolute;
-    top: 15%;
-    width: 100%;
+  position: absolute;
+  top: 15%;
+  width: 100%;
 }
 
 .btn-wrapper {
@@ -243,12 +164,13 @@ nav ul li a:hover {
     opacity: 1;
     cursor: pointer;
     animation: all 10s;
-} */
+}
 
 /* Bagian footer */
 footer {
-    text-align: center;
-    color: black;
-    padding: 32px;
-    /* background-color: #eee; */
+  text-align: center;
+  color: black;
+  top: 0;
+  padding: 32px;
+  width: 100%;
 }

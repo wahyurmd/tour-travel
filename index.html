@@ -7,8 +7,110 @@
     <title>Tour & Travel</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    abg tuaa
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><h4>Tour & Travel</h4></a>
+        </div>
+        <ul class="">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#wisata">Paket Wisata</a></li>
+          <li><a href="#contact">Kontak Kami</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <!-- End: Header -->
+
+    <!-- body bagian list paket wisata populer -->
+    <div class="popular-tour-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Paket Wisata Populer</h2>
+          <p>Paket wisata populer dalam waktu dekat.</p>
+        </div>
+
+        <div class="places">
+          <div class="place">
+            <div class="place-icon">
+              <img src="https://cutt.ly/vA2CJ0o" />
+              <p>Bali</p>
+              <h3>Nusa Penida</h3>
+
+              <div class="btn-wrapper">
+                <a href="#details">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="place">
+            <div class="place-icon">
+              <img src="https://cutt.ly/hA2ZbAy" />
+              <p>Yogyakarta</p>
+              <h3>Gumuk Pasir</h3>
+
+              <div class="btn-wrapper">
+                <a href="#details">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="place">
+            <div class="place-icon">
+              <img src="https://cutt.ly/FA2Xsmg" />
+              <p>Lombok</p>
+              <h3>Rinjani</h3>
+
+              <div class="btn-wrapper">
+                <a href="#details">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="place">
+            <div class="place-icon">
+              <img src="https://cutt.ly/JA2XOct" />
+              <p>Probolinggo</p>
+              <h3>Bromo</h3>
+
+              <div class="btn-wrapper">
+                <a href="#details">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: List pake wisata -->
+
+    <!-- Bagian Footer -->
+    <footer>
+      <div class="container">
+        Copyright &copy; 2022 Travel & Tour. All rights Reserved
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
   </body>
 </html>
