@@ -1,108 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Grande", "Open Sans", sans-serif;
 }
 
 body {
-    width: 100%;
-    font-family: "Lucida Grande", 'Open Sans', sans-serif;
-    background-color: #dddd;
-    overflow-x: hidden;
+  width: 100%;
+  background-color: #dddd;
+  overflow-x: hidden;
 }
 
 .container {
-    max-width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Header menu */
-nav {
-    display: flex;
-    background-color: rgba(95, 158, 160, 0.493);
-    justify-content: space-around;
-    /* padding: 20px 0; */
-    height: 65px;
-    align-items: center;
+header a {
+  text-decoration: none;
 }
 
-nav .logo {
-    font-weight: 700;
-    font-size: 24px;
-    margin-left: -100px;
+header {
+  padding: 0 20px;
+  background-color: rgba(95, 158, 160, 0.493);
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+.header-icon {
+  padding-right: 15px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-between;
+#brand {
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
 }
 
-nav ul li a {
-    font-size: 0.8em;
+#brand a {
+  color: white;
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* Hamburger Menu */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
+ul a {
+  color: white;
 }
 
-.menu-toggle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    opacity: 0;
-    left: -6px;
-    top: -5px;
-    cursor: pointer;
-    z-index: 2;
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-    transition: all 0.5s;
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
-/* Hamburger Menu Animation */
-.menu-toggle span:nth-child(2) {
-    transform-origin: 0 0;
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
 }
 
-.menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(45deg) translate(-1px, -1px);
-    background-color: #fff;
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.menu-toggle input:checked ~ span:nth-child(3) {
-    transform: scale(0);
-    opacity: 0;
+.open .bar2 {
+  opacity: 0;
 }
 
-.menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-45deg) translate(-1px, -0);
-    background-color: #fff;
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+body {
+  width: 100%;
+
+  background-color: #dddd;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Main */
@@ -116,7 +140,7 @@ nav ul li a:hover {
 
 .main {
   height: 500px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .main {
@@ -137,48 +161,48 @@ nav ul li a:hover {
 }
 
 form {
-  width:500px;
-  margin:50px auto;
+  width: 500px;
+  margin: 50px auto;
 }
 .search {
-  padding:8px 15px;
-  background:rgba(3, 3, 3, 0.2);
-  border:0px solid #dbdbdb;
+  padding: 8px 15px;
+  background: rgba(3, 3, 3, 0.2);
+  border: 0px solid #dbdbdb;
 }
 .button {
-  position:relative;
-  padding:6px 15px;
-  left:-8px;
-  border:2px solid #53bd84;
-  background-color:#53bd84;
-  color:#fafafa;
+  position: relative;
+  padding: 6px 15px;
+  left: -8px;
+  border: 2px solid #53bd84;
+  background-color: #53bd84;
+  color: #fafafa;
 }
-.button:hover  {
-  background-color:#fafafa;
-  color:#050505;
+.button:hover {
+  background-color: #fafafa;
+  color: #050505;
 }
 
 /* Bagian popular place */
 .popular-tour-wrapper {
-    padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
 }
 
 .popular-tour-wrapper .container {
-    text-align: center;
+  text-align: center;
 }
 
 .place {
-    float: left;
-    width: 25%;
-    justify-content: space-between;
+  float: left;
+  width: 25%;
+  justify-content: space-between;
 }
 
 .heading {
-    padding-top: 80px;
-    padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .heading h2 {
@@ -186,64 +210,123 @@ form {
 }
 
 .place-icon {
-    position: relative;
-    color: #fff;
+  position: relative;
+  color: #fff;
 }
 
 .place-icon p {
-    position: absolute;
-    top: 5%;
-    width: 100%;
+  position: absolute;
+  top: 5%;
+  width: 100%;
 }
 
 .place-icon h3 {
-    position: absolute;
-    top: 15%;
-    width: 100%;
+  position: absolute;
+  top: 15%;
+  width: 100%;
 }
 
 .place-icon img {
-    width: 250px;
-    height: 350px;
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
 }
 
 .btn-wrapper {
-    position: absolute;
-    top: 80%;
-    width: 100%;
+  position: absolute;
+  top: 80%;
+  width: 100%;
 }
 
 .btn-wrapper a {
-    background-color: #11468F;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: small;
+  background-color: #11468f;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: small;
 }
 
 .btn-wrapper a:hover {
-    background-color: #0b2b57;
-    animation: all 10s;
-    opacity: 1;
+  background-color: #0b2b57;
+  animation: all 10s;
+  opacity: 1;
 }
 
-.animasi {
-    animation-name: animation;
-    animation-duration: 3s;
-    position: relative;
+.popular-tour-wrapper {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  height: 500px;
+  background-color: #eeeeee;
+  z-index: -10;
 }
 
-@keyframes animation {
-  from {left:0px; top:200px;}
-  to {left:0px; top:0px;}
+.popular-tour-wrapper {
+  text-align: center;
+}
+
+.heading h2 {
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.place {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pic-places {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.place-icon {
+  position: relative;
+  color: white;
+}
+
+.place-icon p {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+}
+
+.place-icon h3 {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+.btn-wrapper {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+
+.btn-wrapper button {
+  background-color: #11468f;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: small;
+  opacity: 0.9;
+}
+
+.btn-wrapper button:hover {
+  opacity: 1;
+  cursor: pointer;
+  animation: all 10s;
 }
 
 /* Bagian footer */
 footer {
-    text-align: center;
-    color: black;
-    padding: 32px;
-    /* background-color: #eee; */
+  text-align: center;
+  color: black;
+  padding: 32px;
+  /* background-color: #eee; */
 }
