@@ -229,74 +229,16 @@ form {
     opacity: 1;
 }
 
-/* .popular-tour-wrapper {
-    padding-top: 20px;
-    padding-bottom: 100px;
-    height: 500px;
-    background-color: #EEEEEE;
-    z-index: -10;
-}
-
-.popular-tour-wrapper {
-    text-align: center;
-}
-
-.heading h2 {
-    font-weight: normal;
-    letter-spacing: 3px;
-}
-
-.place {
-    float: left;
-    width: 25%;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.pic-places {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-}
-
-.place-icon {
+.animasi {
+    animation-name: animation;
+    animation-duration: 3s;
     position: relative;
-    color: white;
 }
 
-.place-icon p {
-    position: absolute;
-    top:5%;
-    width: 100%;
-  }
-
-.place-icon h3 {
-    position: absolute;
-    top: 15%;
-    width: 100%;
+@keyframes animation {
+  from {left:0px; top:200px;}
+  to {left:0px; top:0px;}
 }
-
-.btn-wrapper {
-    position: absolute;
-    top: 80%;
-    width: 100%;
-}
-
-.btn-wrapper button {
-    background-color: #11468F;
-    border-radius: 5px;
-    border: none;
-    padding: 10px 25px;
-    color: white;
-    font-size: small;   
-    opacity: 0.9;
-}
-
-.btn-wrapper button:hover {
-    opacity: 1;
-    cursor: pointer;
-    animation: all 10s;
-} */
 
 /* Bagian footer */
 footer {
