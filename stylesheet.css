@@ -1,0 +1,58 @@
+body {
+  font-family: "Lucida Grande";
+  margin: 0;
+}
+
+.container {
+  padding: 100px 0 100px 0;
+  background-image: url(https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/09/12/3435397472.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  height: 500px;
+  background-color: #EEEEEE;
+}
+
+.main {
+  text-align: center;
+}
+
+.copy-container h1 {
+  font-size: 50px;
+  padding: 0 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.copy-container p {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+form {
+  width:500px;
+  margin:50px auto;
+}
+.search {
+  padding:8px 15px;
+  background:rgba(3, 3, 3, 0.2);
+  border:0px solid #dbdbdb;
+}
+.button {
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid #53bd84;
+  background-color:#53bd84;
+  color:#fafafa;
+}
+.button:hover  {
+  background-color:#fafafa;
+  color:#050505;
+}
